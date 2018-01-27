@@ -13,6 +13,7 @@ package com.xacsys.policy;
  */
 public class Rule {
 	
+	private static final String CONDITION_TRACE = ".CONDITION";
 	private String id;
 	private ConditionBase condition;
 	private Object result;
@@ -72,7 +73,7 @@ public class Rule {
 	 * @return
 	 */
 	public boolean evaluate (final EvaluationContext evaluationContext) {
-		final boolean isTrue = condition.evaluate(evaluationContext, name + ".CONDITION");
+		final boolean isTrue = condition.evaluate(evaluationContext, name + CONDITION_TRACE);
 
 		evaluationContext.addTrace(this.getName(), isTrue);
 
