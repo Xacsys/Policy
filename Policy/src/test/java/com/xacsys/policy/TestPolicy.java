@@ -11,6 +11,13 @@ public class TestPolicy {
 
 	
 	@Test
+	/**
+	 * TestBasic
+	 * 
+	 * Demonstrate basic operation with a set of simple binary rules.
+	 * 
+	 * @return ok if passes
+	 */
 	public void TestBasic() {
 	boolean passed = false;
 		
