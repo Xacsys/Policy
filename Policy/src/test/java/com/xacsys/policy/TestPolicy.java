@@ -39,7 +39,7 @@ public class TestPolicy {
 	
 	@Test
 	/**
-	 * basicTest
+	 * constantTest
 	 * 
 	 * Demonstrate basic operation with a set of simple binary rules.
 	 * 
